@@ -1,0 +1,17 @@
+{
+  "heading": "LET'S WORK TOGETHER",
+  "intro": "Interested in working together? Fill out some info and we will be in touch shortly! We can't wait to hear from you!",
+  "serviceOptions": [
+    "New Build",
+    "Renovation",
+    "Design by Room",
+    "Sensory Friendly Design"
+  ],
+  "budgetOptions": [
+    "Under $25,000",
+    "$25,000 - $50,000",
+    "$50,000 - $100,000",
+    "$100,000 - $250,000",
+    "$250,000+"
+  ]
+}

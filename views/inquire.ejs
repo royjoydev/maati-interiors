@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+<body>
+  <%- include('partials/navbar') %>
+
+  <div class="inquire-section">
+    <div class="inquire-header">
+      <h1><%= inquire.heading %></h1>
+      <p><%= inquire.intro %></p>
+    </div>
+
+    <form class="inquire-form" id="inquiryForm">
+      <div class="form-group">
+        <label>Full Name<span class="required">*</span></label>
+        <input type="text" name="fullName" required>
+      </div>
+
+      <div class="form-group">
+        <label>Email<span class="required">*</span></label>
+        <input type="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" name="phone">
+      </div>
+
+      <div class="form-group">
+        <label>Location (City, Province)</label>
+        <input type="text" name="location">
+      </div>
+
+      <div class="form-group">
+        <label>What design service are you interested in?</label>
+        <select name="service">
+          <option value="" selected>Please select</option>
+          <% inquire.serviceOptions.forEach(option => { %>
+            <option value="<%= option %>"><%= option %></option>
+          <% }) %>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Project Budget</label>
+        <select name="budget">
+          <option value="" selected>Please select</option>
+          <% inquire.budgetOptions.forEach(option => { %>
+            <option value="<%= option %>"><%= option %></option>
+          <% }) %>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Your message<span class="required">*</span></label>
+        <textarea name="message" placeholder="Write your message here..." required></textarea>
+      </div>
+
+      <div class="form-submit">
+        <button type="submit" class="btn btn-outline">SUBMIT</button>
+      </div>
+    </form>
+  </div>
+
+  <%- include('partials/footer') %>
+  <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<section class="cta-section">
+  <div class="container">
+    <% if (typeof ctaHeading !== 'undefined' && ctaHeading) { %>
+      <p class="cta-heading"><%= ctaHeading %></p>
+    <% } %>
+    <a href="/inquire" class="btn btn-outline"><%= typeof ctaButton !== 'undefined' ? ctaButton : 'INQUIRE' %></a>
+  </div>
+</section>

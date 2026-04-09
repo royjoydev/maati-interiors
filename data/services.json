@@ -1,0 +1,21 @@
+{
+  "heading": "SERVICES",
+  "services": [
+    {
+      "title": "NEW BUILD",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisi augue, vulputate vel ullamcorper eget, sollicitudin eu orci. Quisque vel hendrerit quam. In semper faucibus interdum. Phasellus et justo posuere, sodales est vel, pharetra diam. Nam quis imperdiet elit, quis egestas libero. Phasellus eleifend tempus hendrerit."
+    },
+    {
+      "title": "RENOVATION",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisi augue, vulputate vel ullamcorper eget, sollicitudin eu orci. Quisque vel hendrerit quam. In semper faucibus interdum. Phasellus et justo posuere, sodales est vel, pharetra diam. Nam quis imperdiet elit, quis egestas libero. Phasellus eleifend tempus hendrerit."
+    },
+    {
+      "title": "DESIGN BY ROOM",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisi augue, vulputate vel ullamcorper eget, sollicitudin eu orci. Quisque vel hendrerit quam. In semper faucibus interdum. Phasellus et justo posuere, sodales est vel, pharetra diam. Nam quis imperdiet elit, quis egestas libero. Phasellus eleifend tempus hendrerit."
+    },
+    {
+      "title": "SENSORY FRIENDLY DESIGN",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisi augue, vulputate vel ullamcorper eget, sollicitudin eu orci. Quisque vel hendrerit quam. In semper faucibus interdum. Phasellus et justo posuere, sodales est vel, pharetra diam. Nam quis imperdiet elit, quis egestas libero. Phasellus eleifend tempus hendrerit."
+    }
+  ]
+}

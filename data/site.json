@@ -1,0 +1,34 @@
+{
+  "brand": {
+    "name": "Maati Interiors",
+    "designer": "Nilakshi Roy",
+    "email": "hello@maatinteriors.com",
+    "tagline": "Designing and nurturing comfortable spaces that balance function and beauty for families who want homes that truly support their lifestyle.",
+    "logo": "/images/maati-logo.svg"
+  },
+  "nav": {
+    "left": [
+      { "label": "Projects", "href": "/portfolio" },
+      { "label": "Services", "href": "/services" },
+      { "label": "Process", "href": "/process" }
+    ],
+    "right": [
+      { "label": "About", "href": "/about" },
+      { "label": "Inquire", "href": "/inquire" }
+    ]
+  },
+  "footer": {
+    "explore": [
+      { "label": "Projects", "href": "/portfolio" },
+      { "label": "Services", "href": "/services" },
+      { "label": "Process", "href": "/process" },
+      { "label": "About", "href": "/about" }
+    ],
+    "connect": [
+      { "label": "Inquire", "href": "/inquire" },
+      { "label": "Blog", "href": "#" },
+      { "label": "Instagram", "href": "#" },
+      { "label": "Pinterest", "href": "#" }
+    ]
+  }
+}

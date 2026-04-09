@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+<body>
+  <%- include('partials/navbar') %>
+
+  <section class="home-hero">
+    <p class="home-hero__subtitle"><%= home.hero.subtitle %></p>
+    <p class="home-hero__text"><%= home.hero.text %></p>
+  </section>
+
+  <section class="home-features">
+    <% home.featureBlocks.forEach(block => { %>
+      <a href="<%= block.href %>" class="feature-block">
+        <% if (block.image) { %>
+          <img class="feature-block__image" src="<%= block.image %>" alt="<%= block.label %>">
+        <% } else { %>
+          <div class="placeholder-image feature-block__image"></div>
+        <% } %>
+        <span class="feature-block__label"><%= block.label %></span>
+      </a>
+    <% }) %>
+  </section>
+
+  <section class="home-testimonial">
+    <p class="home-testimonial__heading"><%= home.testimonial.heading %></p>
+    <p class="home-testimonial__mark">&ldquo;</p>
+    <p class="home-testimonial__quote"><%= home.testimonial.quote %></p>
+  </section>
+
+  <%- include('partials/cta', { ctaHeading: '', ctaButton: 'INQUIRE' }) %>
+
+  <%- include('partials/footer') %>
+  <script src="/js/script.js"></script>
+</body>
+</html>

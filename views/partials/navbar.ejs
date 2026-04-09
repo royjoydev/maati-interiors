@@ -1,0 +1,30 @@
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <ul class="nav-left">
+      <% site.nav.left.forEach(item => { %>
+        <li><a href="<%= item.href %>" class="<%= currentPath === item.href ? 'active' : '' %>"><%= item.label.toUpperCase() %></a></li>
+      <% }) %>
+    </ul>
+    <a href="/" class="nav-logo">
+      <span class="nav-logo-primary">MAATI</span>
+      <span class="nav-logo-sub">INTERIORS</span>
+    </a>
+    <ul class="nav-right">
+      <% site.nav.right.forEach(item => { %>
+        <li><a href="<%= item.href %>" class="<%= currentPath === item.href ? 'active' : '' %>"><%= item.label.toUpperCase() %></a></li>
+      <% }) %>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <ul>
+      <% site.nav.left.concat(site.nav.right).forEach(item => { %>
+        <li><a href="<%= item.href %>" class="<%= currentPath === item.href ? 'active' : '' %>"><%= item.label.toUpperCase() %></a></li>
+      <% }) %>
+    </ul>
+  </div>
+</nav>

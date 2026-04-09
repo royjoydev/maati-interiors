@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+<body>
+  <%- include('partials/navbar') %>
+
+  <div class="about-section">
+    <div class="about-row">
+      <div class="about-text">
+        <p class="about-label"><%= about.designer.label %></p>
+        <h1 class="about-name"><%= about.designer.name %></h1>
+        <% about.designer.bio.forEach(paragraph => { %>
+          <p><%= paragraph %></p>
+        <% }) %>
+      </div>
+      <div class="about-image">
+        <% if (about.designer.image) { %>
+          <img src="<%= about.designer.image %>" alt="<%= about.designer.name %>">
+        <% } else { %>
+          <div class="placeholder-image"></div>
+        <% } %>
+      </div>
+    </div>
+
+    <div class="about-row">
+      <div class="about-image">
+        <% if (about.studio.image) { %>
+          <img src="<%= about.studio.image %>" alt="The Studio">
+        <% } else { %>
+          <div class="placeholder-image"></div>
+        <% } %>
+      </div>
+      <div class="about-text">
+        <p class="about-label"><%= about.studio.label %></p>
+        <h2 class="about-name"><%= about.studio.name %></h2>
+        <% about.studio.description.forEach(paragraph => { %>
+          <p><%= paragraph %></p>
+        <% }) %>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-press">
+    <% about.press.forEach(item => { %>
+      <a href="<%= item.href %>" class="press-item">
+        <% if (item.logo) { %>
+          <img src="<%= item.logo %>" alt="<%= item.name %>">
+        <% } else { %>
+          <span><%= item.name %></span>
+        <% } %>
+      </a>
+    <% }) %>
+  </div>
+
+  <%- include('partials/cta', { ctaHeading: 'Start your dream project today', ctaButton: 'INQUIRE' }) %>
+
+  <%- include('partials/footer') %>
+  <script src="/js/script.js"></script>
+</body>
+</html>

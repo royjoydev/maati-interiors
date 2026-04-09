@@ -1,0 +1,17 @@
+{
+  "heading": "PROCESS",
+  "steps": [
+    {
+      "number": 1,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisi augue, vulputate vel ullamcorper eget, sollicitudin eu orci. Quisque vel hendrerit quam. In semper faucibus interdum. Phasellus et justo posuere, sodales est vel, pharetra diam. Nam quis imperdiet elit, quis egestas libero. Phasellus eleifend tempus hendrerit."
+    },
+    {
+      "number": 2,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisi augue, vulputate vel ullamcorper eget, sollicitudin eu orci. Quisque vel hendrerit quam. In semper faucibus interdum. Phasellus et justo posuere, sodales est vel, pharetra diam. Nam quis imperdiet elit, quis egestas libero. Phasellus eleifend tempus hendrerit."
+    },
+    {
+      "number": 3,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisi augue, vulputate vel ullamcorper eget, sollicitudin eu orci. Quisque vel hendrerit quam. In semper faucibus interdum. Phasellus et justo posuere, sodales est vel, pharetra diam. Nam quis imperdiet elit, quis egestas libero. Phasellus eleifend tempus hendrerit."
+    }
+  ]
+}

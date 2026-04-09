@@ -1,0 +1,5 @@
+node_modules/
+data/submissions.json
+.DS_Store
+*.pdf
+wireframe_page_*.png

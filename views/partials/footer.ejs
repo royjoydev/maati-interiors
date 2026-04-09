@@ -1,0 +1,38 @@
+<footer class="footer">
+  <div class="footer-main">
+    <div class="footer-container">
+      <div class="footer-col footer-tagline">
+        <p><%= site.brand.tagline %></p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Explore</h4>
+        <ul>
+          <% site.footer.explore.forEach(item => { %>
+            <li><a href="<%= item.href %>"><%= item.label.toUpperCase() %></a></li>
+          <% }) %>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Connect</h4>
+        <ul>
+          <% site.footer.connect.forEach(item => { %>
+            <li><a href="<%= item.href %>"><%= item.label.toUpperCase() %></a></li>
+          <% }) %>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter">
+        <h4 class="footer-heading">Join our Newsletter</h4>
+        <form class="newsletter-form" action="#" method="post">
+          <input type="email" name="newsletter_email" placeholder="Email Address" required>
+          <button type="submit" aria-label="Subscribe">&rarr;</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-container">
+      <a href="mailto:<%= site.brand.email %>"><%= site.brand.email.toUpperCase() %></a>
+      <a href="#">TERMS+CONDITIONS</a>
+    </div>
+  </div>
+</footer>

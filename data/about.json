@@ -1,0 +1,25 @@
+{
+  "designer": {
+    "label": "MEET",
+    "name": "NILAKSHI ROY",
+    "bio": [
+      "Nilakshi Roy is the Founder and Principal Designer of Maati Interiors. Trained in architecture and deeply attuned to the emotional and sensory experience of space, she brings a thoughtful, human-centered perspective to every project.",
+      "Her approach balances design precision with intuition \u2014 exploring how light, material, and proportion shape the way we feel in our homes. Guided by empathy and craftsmanship, Nilakshi creates spaces that are not only beautiful, but grounding \u2014 quiet reflections of the people who live in the space."
+    ],
+    "image": ""
+  },
+  "studio": {
+    "label": "THE",
+    "name": "STUDIO",
+    "description": [
+      "At Maati Interiors, we believe that a well-designed home should feel as good as it looks. Our work is guided by a quiet sense of luxury \u2014 spaces that are calm yet expressive, minimal yet deeply lived-in. Every project is approached with warmth and intention, grounded in natural materials, layered neutrals, and textures that invite touch and ease.",
+      "Our aesthetic is rooted in sensory awareness \u2014 designing not only for the eye, but for how a space feels, sounds, and supports everyday life. We blend modern craftsmanship with organic imperfection, curating each element to create interiors that nurture connection, comfort, and well-being."
+    ],
+    "image": ""
+  },
+  "press": [
+    { "name": "PRESS", "logo": "", "href": "#" },
+    { "name": "PRESS", "logo": "", "href": "#" },
+    { "name": "PRESS", "logo": "", "href": "#" }
+  ]
+}

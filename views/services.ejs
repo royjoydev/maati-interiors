@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+<body>
+  <%- include('partials/navbar') %>
+
+  <div class="services-section">
+    <h1 class="services-heading"><%= services.heading %></h1>
+
+    <% services.services.forEach(service => { %>
+      <div class="service-row">
+        <h3 class="service-title"><%= service.title %></h3>
+        <p class="service-description"><%= service.description %></p>
+      </div>
+    <% }) %>
+  </div>
+
+  <%- include('partials/cta', { ctaHeading: 'Connect to start your dream project today', ctaButton: 'PROJECT INQUIRY' }) %>
+
+  <%- include('partials/footer') %>
+  <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "subtitle": "RESIDENTIAL AND COMMERCIAL DESIGN STUDIO",
+    "text": "With a thoughtful, intuitive approach, the studio creates interiors that feel both elevated and deeply livable\u2014spaces where everyday moments unfold with ease. Rooted in a respect for craftsmanship, timeless materials, and intentional design, each project blends practicality with quiet sophistication."
+  },
+  "featureBlocks": [
+    { "label": "PORTFOLIO", "href": "/portfolio", "image": "" },
+    { "label": "SERVICES", "href": "/services", "image": "" }
+  ],
+  "testimonial": {
+    "heading": "TESTIMONIAL",
+    "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisi augue, vulputate vel ullamcorper eget, sollicitudin eu orci. Quisque vel hendrerit quam. In semper faucibus interdum.",
+    "author": ""
+  }
+}

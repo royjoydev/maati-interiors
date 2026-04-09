@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+<body>
+  <%- include('partials/navbar') %>
+
+  <div class="portfolio-hero">
+    <% if (portfolio.heroImage) { %>
+      <img src="<%= portfolio.heroImage %>" alt="Portfolio">
+    <% } else { %>
+      <div class="placeholder-image"></div>
+    <% } %>
+  </div>
+
+  <div class="portfolio-header">
+    <h1><%= portfolio.heading %></h1>
+    <p><%= portfolio.intro %></p>
+  </div>
+
+  <div class="portfolio-grid">
+    <% portfolio.projects.forEach(project => { %>
+      <div class="project-card">
+        <div class="project-card__image">
+          <% if (project.image) { %>
+            <img src="<%= project.image %>" alt="<%= project.name %>">
+          <% } else { %>
+            <div class="placeholder-image"></div>
+          <% } %>
+          <% if (project.comingSoon) { %>
+            <div class="project-card__overlay">
+              <span>COMING SOON</span>
+            </div>
+          <% } %>
+        </div>
+        <p class="project-card__name"><%= project.name %>: <%= project.location %></p>
+        <p class="project-card__type"><%= project.type %></p>
+      </div>
+    <% }) %>
+  </div>
+
+  <%- include('partials/cta', { ctaHeading: 'Start your dream project today', ctaButton: 'INQUIRE' }) %>
+
+  <%- include('partials/footer') %>
+  <script src="/js/script.js"></script>
+</body>
+</html>

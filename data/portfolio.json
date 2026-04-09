@@ -1,0 +1,49 @@
+{
+  "heroImage": "",
+  "heading": "PORTFOLIO PROJECTS",
+  "intro": "At Maati Interiors, design is guided by intuition, craftsmanship, and a deep sensitivity to how spaces shape the way we feel. Each project balances light, material, and proportion to create interiors that are calm, grounded, and deeply personal\u2014spaces that feel as beautiful as they are livable.",
+  "projects": [
+    {
+      "name": "Project Name",
+      "location": "Location",
+      "type": "New Build",
+      "image": "",
+      "comingSoon": false
+    },
+    {
+      "name": "Project Name",
+      "location": "Location",
+      "type": "Renovation",
+      "image": "",
+      "comingSoon": false
+    },
+    {
+      "name": "Project Name",
+      "location": "Location",
+      "type": "Room",
+      "image": "",
+      "comingSoon": false
+    },
+    {
+      "name": "Project Name",
+      "location": "Location",
+      "type": "New Build",
+      "image": "",
+      "comingSoon": false
+    },
+    {
+      "name": "Project Name",
+      "location": "Location",
+      "type": "Renovation",
+      "image": "",
+      "comingSoon": false
+    },
+    {
+      "name": "Project Name",
+      "location": "Location",
+      "type": "New Build",
+      "image": "",
+      "comingSoon": true
+    }
+  ]
+}
