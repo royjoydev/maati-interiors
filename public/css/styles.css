@@ -256,13 +256,9 @@ p:last-child {
   flex-shrink: 0;
 }
 
-.nav-logo-primary {
-  font-family: var(--font-serif);
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: 0.25em;
-  color: var(--color-brown-dark);
-  line-height: 1;
+.nav-logo-img {
+  height: 36px;
+  width: auto;
 }
 
 .nav-logo-sub {
