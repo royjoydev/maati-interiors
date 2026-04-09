@@ -31,6 +31,29 @@ navMobile.querySelectorAll('a').forEach(link => {
   });
 });
 
+// Testimonial slider
+const slider = document.getElementById('testimonialSlider');
+if (slider) {
+  const slides = slider.querySelectorAll('.testimonial-slide');
+  const counter = document.getElementById('testimonialCounter');
+  const prevBtn = document.getElementById('testimonialPrev');
+  const nextBtn = document.getElementById('testimonialNext');
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach(s => s.classList.remove('active'));
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    counter.textContent = (current + 1) + ' / ' + slides.length;
+  }
+
+  prevBtn.addEventListener('click', () => showSlide(current - 1));
+  nextBtn.addEventListener('click', () => showSlide(current + 1));
+
+  // Auto-advance every 8 seconds
+  setInterval(() => showSlide(current + 1), 8000);
+}
+
 // Inquiry form handling
 const inquiryForm = document.getElementById('inquiryForm');
 if (inquiryForm) {
@@ -43,7 +66,19 @@ if (inquiryForm) {
 
     try {
       const formData = new FormData(inquiryForm);
-      const data = Object.fromEntries(formData);
+      const data = {};
+      formData.forEach((value, key) => {
+        if (data[key]) {
+          if (Array.isArray(data[key])) {
+            data[key].push(value);
+          } else {
+            data[key] = [data[key], value];
+          }
+        } else {
+          data[key] = value;
+        }
+      });
+
       const res = await fetch('/api/inquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -51,7 +86,7 @@ if (inquiryForm) {
       });
       const result = await res.json();
       if (result.success) {
-        inquiryForm.innerHTML = '<div class="form-success"><h3>Thank you!</h3><p>We\'ll be in touch shortly.</p></div>';
+        inquiryForm.innerHTML = '<div class="form-success"><h3>Thank you for reaching out.</h3><p>We review each inquiry carefully. If your project aligns, we\u2019ll be in touch to schedule a consultation and discuss next steps.</p></div>';
       } else {
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;

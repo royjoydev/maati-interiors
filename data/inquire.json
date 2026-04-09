@@ -1,17 +1,55 @@
 {
-  "heading": "LET'S WORK TOGETHER",
-  "intro": "Interested in working together? Fill out some info and we will be in touch shortly! We can't wait to hear from you!",
-  "serviceOptions": [
-    "New Build",
-    "Renovation",
-    "Design by Room",
-    "Sensory Friendly Design"
+  "heading": "START YOUR PROJECT",
+  "intro": "At Maati Interiors, we take on a limited number of projects to ensure each home is thoughtfully designed and fully realized. We are best suited for clients seeking a thoughtful, full-service design experience.",
+  "subIntro": "Please share details about your project below. If it\u2019s a strong fit, we\u2019ll be in touch to schedule a consultation.",
+  "projectTypes": [
+    "Full-Service Interior Design",
+    "Renovation / New Build",
+    "Room-by-Room Design",
+    "Styling / Finishing",
+    "Not Sure Yet"
+  ],
+  "spaces": [
+    "Entire Home",
+    "Living Room",
+    "Kitchen",
+    "Bedrooms",
+    "Bathrooms",
+    "Nursery / Kids Room",
+    "Office",
+    "Outdoor",
+    "Other"
+  ],
+  "timeframes": [
+    "ASAP",
+    "1\u20133 Months",
+    "3\u20136 Months",
+    "6+ Months"
   ],
   "budgetOptions": [
-    "Under $25,000",
-    "$25,000 - $50,000",
-    "$50,000 - $100,000",
-    "$100,000 - $250,000",
+    "$10,000 \u2013 $25,000",
+    "$25,000 \u2013 $50,000",
+    "$50,000 \u2013 $100,000",
+    "$100,000 \u2013 $250,000",
     "$250,000+"
-  ]
+  ],
+  "sensoryOptions": [
+    "Yes",
+    "No",
+    "Not sure, but interested"
+  ],
+  "decisionMaker": [
+    "Yes",
+    "No",
+    "Shared"
+  ],
+  "workedWithDesigner": [
+    "Yes",
+    "No"
+  ],
+  "budgetNote": "Our full-service projects typically require a significant investment to ensure a cohesive, high-quality result.",
+  "successMessage": {
+    "heading": "Thank you for reaching out.",
+    "text": "We review each inquiry carefully. If your project aligns, we\u2019ll be in touch to schedule a consultation and discuss next steps."
+  }
 }

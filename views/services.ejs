@@ -6,16 +6,59 @@
 
   <div class="services-section">
     <h1 class="services-heading"><%= services.heading %></h1>
+    <div class="services-intro">
+      <p><%= services.intro %></p>
+      <p><%= services.subIntro %></p>
+    </div>
 
     <% services.services.forEach(service => { %>
       <div class="service-row">
-        <h3 class="service-title"><%= service.title %></h3>
-        <p class="service-description"><%= service.description %></p>
+        <div class="service-header">
+          <h3 class="service-title"><%= service.title %></h3>
+          <p class="service-subtitle"><%= service.subtitle %></p>
+        </div>
+        <div class="service-body">
+          <p class="service-description"><%= service.description %></p>
+
+          <% if (service.idealFor && service.idealFor.length > 0) { %>
+            <p class="service-list-label">Ideal for:</p>
+            <ul class="service-list">
+              <% service.idealFor.forEach(item => { %>
+                <li><%= item %></li>
+              <% }) %>
+            </ul>
+          <% } %>
+
+          <% if (service.details && service.details.length > 0) { %>
+            <p class="service-list-label"><%= service.idealFor && service.idealFor.length > 0 ? 'What we handle:' : 'This includes:' %></p>
+            <ul class="service-list">
+              <% service.details.forEach(item => { %>
+                <li><%= item %></li>
+              <% }) %>
+            </ul>
+          <% } %>
+
+          <% if (service.note) { %>
+            <p class="service-note"><%= service.note %></p>
+          <% } %>
+        </div>
       </div>
     <% }) %>
+
+    <div class="services-approach">
+      <h2><%= services.approach.heading %></h2>
+      <p><%= services.approach.text %></p>
+      <p class="services-approach__goal"><%= services.approach.goal %></p>
+    </div>
   </div>
 
-  <%- include('partials/cta', { ctaHeading: 'Connect to start your dream project today', ctaButton: 'PROJECT INQUIRY' }) %>
+  <div class="cta-section">
+    <div class="container">
+      <p class="cta-heading"><%= services.cta.heading %></p>
+      <p class="cta-text"><%= services.cta.text %></p>
+      <a href="/inquire" class="btn btn-outline">START YOUR PROJECT</a>
+    </div>
+  </div>
 
   <%- include('partials/footer') %>
   <script src="/js/script.js"></script>

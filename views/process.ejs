@@ -6,15 +6,19 @@
 
   <div class="process-section">
     <h1 class="process-heading"><%= processData.heading %></h1>
+    <p class="process-intro"><%= processData.intro %></p>
 
     <% processData.steps.forEach(step => { %>
       <div class="process-step">
         <span class="process-number"><%= step.number %>.</span>
         <div class="process-content">
+          <h3 class="process-title"><%= step.title %></h3>
           <p><%= step.description %></p>
         </div>
       </div>
     <% }) %>
+
+    <p class="process-note"><%= processData.note %></p>
   </div>
 
   <%- include('partials/cta', { ctaHeading: 'Connect to start your dream project today', ctaButton: 'PROJECT INQUIRY' }) %>

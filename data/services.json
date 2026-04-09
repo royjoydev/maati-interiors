@@ -1,21 +1,48 @@
 {
   "heading": "SERVICES",
+  "intro": "At Maati Interiors, we believe that a well-designed home should feel as good as it looks. Our work is rooted in natural materials, thoughtful function, and a deep understanding of how environments impact daily life.",
+  "subIntro": "We take on a limited number of projects to ensure each home is considered, cohesive, and fully realized.",
   "services": [
     {
-      "title": "NEW BUILD",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisi augue, vulputate vel ullamcorper eget, sollicitudin eu orci. Quisque vel hendrerit quam. In semper faucibus interdum. Phasellus et justo posuere, sodales est vel, pharetra diam. Nam quis imperdiet elit, quis egestas libero. Phasellus eleifend tempus hendrerit."
+      "title": "FULL-SERVICE INTERIOR DESIGN",
+      "subtitle": "Our signature offering",
+      "description": "This is where we do our best work\u2014designing entire homes from concept to completion.",
+      "idealFor": ["New builds", "Renovations", "Full-home furnishing projects"],
+      "details": ["Space planning + layout refinement", "Material and finish selection", "Custom furnishings + sourcing", "Custom Millwork Design", "Lighting design", "Procurement + order management", "Installation + final styling"],
+      "note": "We manage every detail so your home comes together seamlessly."
     },
     {
-      "title": "RENOVATION",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisi augue, vulputate vel ullamcorper eget, sollicitudin eu orci. Quisque vel hendrerit quam. In semper faucibus interdum. Phasellus et justo posuere, sodales est vel, pharetra diam. Nam quis imperdiet elit, quis egestas libero. Phasellus eleifend tempus hendrerit."
+      "title": "ROOM-BY-ROOM DESIGN",
+      "subtitle": "For focused transformations",
+      "description": "Not every project requires a full-home scope\u2014but it should still feel intentional.",
+      "idealFor": ["Kitchen Remodels", "Living rooms", "Bedrooms", "Nurseries", "Home offices"],
+      "details": [],
+      "note": "We approach each space as part of a larger story, ensuring it feels elevated, functional, and aligned with how you live."
     },
     {
-      "title": "DESIGN BY ROOM",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisi augue, vulputate vel ullamcorper eget, sollicitudin eu orci. Quisque vel hendrerit quam. In semper faucibus interdum. Phasellus et justo posuere, sodales est vel, pharetra diam. Nam quis imperdiet elit, quis egestas libero. Phasellus eleifend tempus hendrerit."
+      "title": "SENSORY-FRIENDLY DESIGN",
+      "subtitle": "Our specialty",
+      "description": "We design spaces that support calm, clarity, and regulation, especially for neurodivergent individuals and families.",
+      "idealFor": [],
+      "details": ["Lighting strategy to reduce overstimulation", "Material and texture selection for comfort", "Thoughtful color palettes", "Layouts that improve flow and ease", "Noise-conscious design decisions"],
+      "note": "This is not just design, it\u2019s how your home supports your nervous system."
     },
     {
-      "title": "SENSORY FRIENDLY DESIGN",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisi augue, vulputate vel ullamcorper eget, sollicitudin eu orci. Quisque vel hendrerit quam. In semper faucibus interdum. Phasellus et justo posuere, sodales est vel, pharetra diam. Nam quis imperdiet elit, quis egestas libero. Phasellus eleifend tempus hendrerit."
+      "title": "STYLING & FINISHING",
+      "subtitle": "The final layer that changes everything",
+      "description": "For clients who need help bringing a space together.",
+      "idealFor": [],
+      "details": ["Furniture refinement", "Decor and accessory styling", "Cohesion and visual balance"],
+      "note": "This is where a home shifts from \u201calmost there\u201d to complete."
     }
-  ]
+  ],
+  "approach": {
+    "heading": "Our Approach",
+    "text": "We don\u2019t design for trends. But rather for how you live, move, and feel in your space every day.",
+    "goal": "Create homes that feel grounded, effortless, and deeply personal."
+  },
+  "cta": {
+    "heading": "Start Your Project Today",
+    "text": "We take on a limited number of clients each season. Submit an inquiry with details about your space, timeline, and goals, and we\u2019ll guide you through next steps."
+  }
 }

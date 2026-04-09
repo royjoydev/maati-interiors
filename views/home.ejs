@@ -22,10 +22,23 @@
     <% }) %>
   </section>
 
-  <section class="home-testimonial">
-    <p class="home-testimonial__heading"><%= home.testimonial.heading %></p>
-    <p class="home-testimonial__mark">&ldquo;</p>
-    <p class="home-testimonial__quote"><%= home.testimonial.quote %></p>
+  <section class="home-testimonials">
+    <p class="home-testimonials__label">TESTIMONIALS</p>
+    <div class="testimonial-slider" id="testimonialSlider">
+      <% home.testimonials.forEach((t, i) => { %>
+        <div class="testimonial-slide <%= i === 0 ? 'active' : '' %>">
+          <p class="testimonial-mark">&ldquo;</p>
+          <p class="testimonial-heading"><%= t.heading %></p>
+          <p class="testimonial-quote"><%= t.quote %></p>
+          <p class="testimonial-author">&mdash; <%= t.author %></p>
+        </div>
+      <% }) %>
+    </div>
+    <div class="testimonial-nav">
+      <button class="testimonial-prev" id="testimonialPrev" aria-label="Previous testimonial">&larr;</button>
+      <span class="testimonial-counter" id="testimonialCounter">1 / <%= home.testimonials.length %></span>
+      <button class="testimonial-next" id="testimonialNext" aria-label="Next testimonial">&rarr;</button>
+    </div>
   </section>
 
   <%- include('partials/cta', { ctaHeading: '', ctaButton: 'INQUIRE' }) %>

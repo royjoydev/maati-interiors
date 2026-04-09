@@ -1,17 +1,27 @@
 {
   "heading": "PROCESS",
+  "intro": "Our process is structured and fully managed:",
   "steps": [
     {
       "number": 1,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisi augue, vulputate vel ullamcorper eget, sollicitudin eu orci. Quisque vel hendrerit quam. In semper faucibus interdum. Phasellus et justo posuere, sodales est vel, pharetra diam. Nam quis imperdiet elit, quis egestas libero. Phasellus eleifend tempus hendrerit."
+      "title": "Discovery + Vision Alignment",
+      "description": "We begin by understanding your lifestyle, needs, and vision for the space. This foundational step ensures every design decision is grounded in how you actually live."
     },
     {
       "number": 2,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisi augue, vulputate vel ullamcorper eget, sollicitudin eu orci. Quisque vel hendrerit quam. In semper faucibus interdum. Phasellus et justo posuere, sodales est vel, pharetra diam. Nam quis imperdiet elit, quis egestas libero. Phasellus eleifend tempus hendrerit."
+      "title": "Concept + Design Development",
+      "description": "We develop a cohesive design direction\u2014from spatial planning and material palettes to custom details\u2014translating your vision into a fully realized concept."
     },
     {
       "number": 3,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisi augue, vulputate vel ullamcorper eget, sollicitudin eu orci. Quisque vel hendrerit quam. In semper faucibus interdum. Phasellus et justo posuere, sodales est vel, pharetra diam. Nam quis imperdiet elit, quis egestas libero. Phasellus eleifend tempus hendrerit."
+      "title": "Sourcing + Procurement",
+      "description": "We source and procure every element\u2014furniture, fixtures, materials, and custom pieces\u2014managing orders and timelines so nothing falls through the cracks."
+    },
+    {
+      "number": 4,
+      "title": "Installation + Styling",
+      "description": "We oversee every detail of the final installation and add the finishing layers that bring the space to life\u2014transforming it from a design plan into a home."
     }
-  ]
+  ],
+  "note": "You\u2019re guided through key decisions while we handle the details."
 }

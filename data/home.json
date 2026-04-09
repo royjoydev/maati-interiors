@@ -1,15 +1,32 @@
 {
   "hero": {
     "subtitle": "RESIDENTIAL AND COMMERCIAL DESIGN STUDIO",
-    "text": "With a thoughtful, intuitive approach, the studio creates interiors that feel both elevated and deeply livable\u2014spaces where everyday moments unfold with ease. Rooted in a respect for craftsmanship, timeless materials, and intentional design, each project blends practicality with quiet sophistication."
+    "text": "With a thoughtful, intuitive approach, Maati Studio creates interiors that feel both elevated and deeply livable\u2014spaces where everyday moments unfold with ease. Rooted in a respect for craftsmanship, timeless materials, and intentional design, each project blends practicality with quiet sophistication."
   },
   "featureBlocks": [
     { "label": "PORTFOLIO", "href": "/portfolio", "image": "" },
     { "label": "SERVICES", "href": "/services", "image": "" }
   ],
-  "testimonial": {
-    "heading": "TESTIMONIAL",
-    "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisi augue, vulputate vel ullamcorper eget, sollicitudin eu orci. Quisque vel hendrerit quam. In semper faucibus interdum.",
-    "author": ""
-  }
+  "testimonials": [
+    {
+      "heading": "STRONG CREATIVE EYE",
+      "quote": "Maati Interiors designed a beautiful, warm and functional space for us. We are thrilled with the result. Attention to detail and materials, a strong creative eye and high quality technical design ensured we knew what we were getting from the get go. She took the pressure off as we were uncertain on how to proceed with various aspects of the interior design. After our initial meeting we knew we were in good hands and appreciated how responsive she was when we had questions. We highly recommend this company.",
+      "author": "F & A Muir"
+    },
+    {
+      "heading": "DELIVERS A COMPREHENSIVE DESIGN",
+      "quote": "Nilakshi is an absolutely phenomenal interior designer. She is empathetic, organized and has an eye for creative details. She went above and beyond to deliver a comprehensive design package with drawings, renderings and a bill of materials. I would not hesitate to recommend her amazing work!",
+      "author": "Daniel Perrett"
+    },
+    {
+      "heading": "INCREDIBLY TALENTED DESIGNER",
+      "quote": "We have worked with Nilakshi on multiple projects. She is an incredibly talented designer and provides an amazing client experience. The way she communicates and works with her clients is first class. Her genuine love of her work and attention to detail is evident in the beautiful design she produces. I know that whenever we entrust a client to Nilakshi that they will be thoroughly impressed. I would happily recommend Nilakshi to anyone.",
+      "author": "Jordan Harrison"
+    },
+    {
+      "heading": "TRULY IMPRESSIVE",
+      "quote": "Nilakshi did an absolutely fantastic job with the interior design of our home! Her creativity, attention to detail, and ability to bring our vision to life were truly impressive. She seamlessly blended our style with her innovative ideas, creating a warm, beautiful, and functional space. The process was smooth and enjoyable, thanks to her professionalism and clear communication. We couldn't be happier with the results and highly recommend Nilakshi to anyone looking for an exceptional interior designer!",
+      "author": "Mark Tadic"
+    }
+  ]
 }

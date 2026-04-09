@@ -4,21 +4,15 @@ const fs = require('fs');
 const path = require('path');
 
 router.post('/inquiry', (req, res) => {
-  const { fullName, email, phone, location, service, budget, message } = req.body;
+  const { fullName, email, phone, location, projectType, budget } = req.body;
 
-  if (!fullName || !email || !message) {
+  if (!fullName || !email || !phone || !location || !projectType || !budget) {
     return res.status(400).json({ success: false, error: 'Please fill in all required fields.' });
   }
 
   const submission = {
     id: Date.now().toString(),
-    fullName,
-    email,
-    phone: phone || '',
-    location: location || '',
-    service: service || '',
-    budget: budget || '',
-    message,
+    ...req.body,
     submittedAt: new Date().toISOString()
   };
 
