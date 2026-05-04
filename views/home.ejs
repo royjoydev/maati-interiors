@@ -18,7 +18,7 @@
   <section class="home-founder">
     <div class="home-founder__inner">
       <div class="home-founder__text">
-        <p class="home-founder__eyebrow">MEET NILAKSHI ROY</p>
+        <h2 class="home-founder__heading">Meet Nilakshi Roy</h2>
         <p>The Founder and Principal Designer of Maati Interiors. Trained in architecture and deeply attuned to the emotional and sensory experience of space, she brings a thoughtful, human-centered perspective to every project. Her approach balances design precision with intuition &mdash; exploring how light, material, and proportion shape the way we feel in our homes.</p>
         <p>Nilakshi creates spaces that are not only beautiful, grounding, and quiet reflections of the people who live in the space.</p>
         <a href="/about" class="btn btn-outline">MORE ABOUT NILAKSHI</a>
@@ -27,19 +27,6 @@
         <img src="/images/about/nilakshi-portrait.jpg" alt="Nilakshi Roy, Founder and Principal Designer of Maati Interiors">
       </div>
     </div>
-  </section>
-
-  <section class="home-features">
-    <% home.featureBlocks.forEach(block => { %>
-      <a href="<%= block.href %>" class="feature-block">
-        <% if (block.image) { %>
-          <img class="feature-block__image" src="<%= block.image %>" alt="<%= block.label %>">
-        <% } else { %>
-          <div class="placeholder-image feature-block__image"></div>
-        <% } %>
-        <span class="feature-block__label"><%= block.label %></span>
-      </a>
-    <% }) %>
   </section>
 
   <section class="home-testimonials">
@@ -61,7 +48,16 @@
     </div>
   </section>
 
-  <%- include('partials/cta', { ctaHeading: '', ctaButton: 'INQUIRE' }) %>
+  <section class="start-project">
+    <div class="start-project__image">
+      <img src="/images/start-project.jpg" alt="Start your project with Maati Interiors">
+    </div>
+    <div class="start-project__text">
+      <h2 class="start-project__heading">Start Your Project</h2>
+      <p>You&rsquo;re just a phone call away from your dream space. We&rsquo;ll be happy to discuss ideas, provide estimates, and answer all your questions.</p>
+      <a href="/inquire" class="btn btn-outline">INQUIRE</a>
+    </div>
+  </section>
 
   <%- include('partials/footer') %>
   <script src="/js/script.js"></script>
