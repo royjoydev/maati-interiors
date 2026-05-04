@@ -51,6 +51,16 @@ router.get('/process', (req, res) => {
   });
 });
 
+// FAQ
+router.get('/faq', (req, res) => {
+  const faq = require('../data/faq.json');
+  res.render('faq', {
+    title: 'Frequently Asked Questions | Maati Interiors',
+    description: 'Answers to common questions about working with Maati Interiors.',
+    faq
+  });
+});
+
 // Inquire
 router.get('/inquire', (req, res) => {
   const inquire = require('../data/inquire.json');

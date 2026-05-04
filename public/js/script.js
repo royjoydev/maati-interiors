@@ -54,6 +54,16 @@ if (slider) {
   setInterval(() => showSlide(current + 1), 8000);
 }
 
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    item.classList.toggle('open');
+    btn.setAttribute('aria-expanded', !isOpen);
+  });
+});
+
 // Inquiry form handling
 const inquiryForm = document.getElementById('inquiryForm');
 if (inquiryForm) {

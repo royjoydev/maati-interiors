@@ -14,7 +14,8 @@
     ],
     "right": [
       { "label": "About", "href": "/about" },
-      { "label": "Inquire", "href": "/inquire" }
+      { "label": "Inquire", "href": "/inquire" },
+      { "label": "FAQ", "href": "/faq" }
     ]
   },
   "footer": {
@@ -26,7 +27,7 @@
     ],
     "connect": [
       { "label": "Inquire", "href": "/inquire" },
-      { "label": "Blog", "href": "#" },
+      { "label": "FAQ", "href": "/faq" },
       { "label": "Instagram", "href": "#" },
       { "label": "Pinterest", "href": "#" }
     ]

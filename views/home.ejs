@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('partials/head') %>
-<body>
+<body class="page-home">
   <%- include('partials/navbar') %>
 
-  <section class="home-hero">
-    <p class="home-hero__subtitle"><%= home.hero.subtitle %></p>
-    <p class="home-hero__text"><%= home.hero.text %></p>
+  <section class="hero-video">
+    <video class="hero-video__media" autoplay muted loop playsinline poster="">
+      <source src="/videos/hero-materials.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video__overlay"></div>
+    <div class="hero-video__content">
+      <h1 class="hero-video__title">Residential and Commercial Design Studio</h1>
+      <p class="hero-video__subtitle">With a thoughtful, intuitive approach, Maati Studio creates interiors that feel both elevated and deeply livable&mdash;spaces where everyday moments unfold with ease. Rooted in a respect for craftsmanship, timeless materials, and intentional design, each project blends practicality with quiet sophistication.</p>
+    </div>
+  </section>
+
+  <section class="home-founder">
+    <div class="home-founder__inner">
+      <div class="home-founder__text">
+        <p class="home-founder__eyebrow">MEET NILAKSHI ROY</p>
+        <p>The Founder and Principal Designer of Maati Interiors. Trained in architecture and deeply attuned to the emotional and sensory experience of space, she brings a thoughtful, human-centered perspective to every project. Her approach balances design precision with intuition &mdash; exploring how light, material, and proportion shape the way we feel in our homes.</p>
+        <p>Nilakshi creates spaces that are not only beautiful, grounding, and quiet reflections of the people who live in the space.</p>
+        <a href="/about" class="btn btn-outline">MORE ABOUT NILAKSHI</a>
+      </div>
+      <div class="home-founder__image">
+        <img src="/images/about/nilakshi-portrait.jpg" alt="Nilakshi Roy, Founder and Principal Designer of Maati Interiors">
+      </div>
+    </div>
   </section>
 
   <section class="home-features">
