@@ -64,6 +64,16 @@ document.querySelectorAll('.faq-question').forEach(btn => {
   });
 });
 
+// Services accordion
+document.querySelectorAll('.service-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const row = btn.parentElement;
+    const isOpen = row.classList.contains('open');
+    row.classList.toggle('open');
+    btn.setAttribute('aria-expanded', !isOpen);
+  });
+});
+
 // Inquiry form handling
 const inquiryForm = document.getElementById('inquiryForm');
 if (inquiryForm) {

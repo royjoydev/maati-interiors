@@ -30,12 +30,10 @@
   </section>
 
   <section class="home-testimonials">
-    <p class="home-testimonials__label">TESTIMONIALS</p>
+    <h2 class="home-testimonials__label">Testimonials</h2>
     <div class="testimonial-slider" id="testimonialSlider">
       <% home.testimonials.forEach((t, i) => { %>
         <div class="testimonial-slide <%= i === 0 ? 'active' : '' %>">
-          <p class="testimonial-mark">&ldquo;</p>
-          <p class="testimonial-heading"><%= t.heading %></p>
           <p class="testimonial-quote"><%= t.quote %></p>
           <p class="testimonial-author">&mdash; <%= t.author %></p>
         </div>

@@ -28,8 +28,7 @@
     "connect": [
       { "label": "Inquire", "href": "/inquire" },
       { "label": "FAQ", "href": "/faq" },
-      { "label": "Instagram", "href": "#" },
-      { "label": "Pinterest", "href": "#" }
+      { "label": "Instagram", "href": "#" }
     ]
   }
 }

@@ -11,53 +11,75 @@
       <p><%= services.subIntro %></p>
     </div>
 
-    <% services.services.forEach(service => { %>
-      <div class="service-row">
-        <div class="service-header">
-          <h3 class="service-title"><%= service.title %></h3>
-          <p class="service-subtitle"><%= service.subtitle %></p>
+    <div class="services-list">
+      <% services.services.forEach((service, idx) => { %>
+        <div class="service-row">
+          <button class="service-toggle" aria-expanded="false">
+            <div class="service-header">
+              <h3 class="service-title"><%= service.title %></h3>
+              <p class="service-subtitle"><%= service.subtitle %></p>
+            </div>
+            <span class="service-icon" aria-hidden="true">+</span>
+          </button>
+
+          <div class="service-body">
+            <% if (service.leadText) { %>
+              <p class="service-description"><%= service.leadText %></p>
+            <% } %>
+            <p class="service-description"><%= service.description %></p>
+
+            <% if (service.idealFirst && service.idealFor && service.idealFor.length > 0) { %>
+              <p class="service-list-label">Ideal for:</p>
+              <ul class="service-list">
+                <% service.idealFor.forEach(item => { %>
+                  <li><%= item %></li>
+                <% }) %>
+              </ul>
+            <% } %>
+
+            <% if (!service.idealFirst && service.idealFor && service.idealFor.length > 0) { %>
+              <p class="service-list-label">Ideal for:</p>
+              <ul class="service-list">
+                <% service.idealFor.forEach(item => { %>
+                  <li><%= item %></li>
+                <% }) %>
+              </ul>
+            <% } %>
+
+            <% if (service.details && service.details.length > 0) { %>
+              <p class="service-list-label"><%= service.idealFor && service.idealFor.length > 0 ? 'What we handle:' : 'This includes:' %></p>
+              <ul class="service-list">
+                <% service.details.forEach(item => { %>
+                  <li><%= item %></li>
+                <% }) %>
+              </ul>
+            <% } %>
+
+            <% if (service.note) { %>
+              <p class="service-note"><%= service.note %></p>
+            <% } %>
+          </div>
         </div>
-        <div class="service-body">
-          <p class="service-description"><%= service.description %></p>
-
-          <% if (service.idealFor && service.idealFor.length > 0) { %>
-            <p class="service-list-label">Ideal for:</p>
-            <ul class="service-list">
-              <% service.idealFor.forEach(item => { %>
-                <li><%= item %></li>
-              <% }) %>
-            </ul>
-          <% } %>
-
-          <% if (service.details && service.details.length > 0) { %>
-            <p class="service-list-label"><%= service.idealFor && service.idealFor.length > 0 ? 'What we handle:' : 'This includes:' %></p>
-            <ul class="service-list">
-              <% service.details.forEach(item => { %>
-                <li><%= item %></li>
-              <% }) %>
-            </ul>
-          <% } %>
-
-          <% if (service.note) { %>
-            <p class="service-note"><%= service.note %></p>
-          <% } %>
-        </div>
-      </div>
-    <% }) %>
-
-    <div class="services-approach">
-      <h2><%= services.approach.heading %></h2>
-      <p><%= services.approach.text %></p>
-      <p class="services-approach__goal"><%= services.approach.goal %></p>
+      <% }) %>
     </div>
   </div>
 
-  <div class="cta-section">
-    <div class="container">
-      <p class="cta-heading"><%= services.cta.heading %></p>
-      <p class="cta-text"><%= services.cta.text %></p>
-      <a href="/inquire" class="btn btn-outline">START YOUR PROJECT</a>
-    </div>
+  <div class="services-feature-image">
+    <img src="/images/0O3A1800.jpg" alt="Maati Interiors design detail">
+  </div>
+
+  <div class="services-approach">
+    <h2 class="services-section-title"><%= services.approach.heading %></h2>
+    <p><%= services.approach.text %></p>
+    <p class="services-approach__goal"><%= services.approach.goal %></p>
+  </div>
+
+  <div class="services-divider"></div>
+
+  <div class="services-cta">
+    <h2 class="services-section-title"><%= services.cta.heading %></h2>
+    <p><%= services.cta.text %></p>
+    <a href="/inquire" class="btn btn-outline">INQUIRE</a>
   </div>
 
   <%- include('partials/footer') %>
